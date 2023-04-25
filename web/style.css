@@ -1,0 +1,168 @@
+@font-face {
+    font-family: PlayFairRegular;
+    src: url(../fontes/PlayfairDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: Kooka;
+    src: url(../fontes/FontsFree-Net-Kooka-Regular.ttf);
+}
+
+main {
+    display: flex;
+    flex: 1;
+    width: auto;
+    flex-direction: column;
+}
+
+#page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    background-image: url("../background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.navbar-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
+    padding: 1em 6em 0;
+}
+
+.icon-twiiter {
+    margin: 0 15px 0;
+}
+
+.navbar-botes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px 0px;
+    background-color: transparent;
+}
+
+.navbar-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-logo h1{
+    font-size: 36px;
+    color: white;
+    font-family: Kooka;
+    margin-left: 10px;
+}
+
+.navbar-itens {
+    margin-left: 20px;
+}
+
+.navbar-item {
+    padding: 0px 20px;
+}
+
+.navbar-button {
+    background-color: #4F963D;
+    padding: 12px;
+    border-radius: 25px;
+}
+
+.navbar span {
+    color: white;
+    font-size: 18px;
+    font-family: PlayFairRegular;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* margin: 5em 20em 0; */
+    margin: 5em 20% 0;
+}
+
+.container h2, p{
+    color: white;
+    font-family: PlayFairRegular;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#container-subtitle {
+    text-align: justify;
+    font-size: 3.3em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+#container-text {
+    text-align: justify;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4F963D;
+    padding: 12px;
+    border-radius: 25px;
+    color: white;
+    font-family: PlayFairRegular;
+    width: 150px;
+}
+
+.footerpg1 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0%;
+}
+
+#page2 {
+    height: 100vh;
+    width: auto;
+    background-color: red;
+}
+
+#page3 {
+    height: 100vh;
+    width: auto;
+    background-color: rgb(0, 255, 213);
+}
+
+#page4 {
+    height: 100vh;
+    width: auto;
+    background-color: rgb(51, 255, 0);
+}
+
+#page5 {
+    height: 100vh;
+    width: auto;
+    background-color: rgb(212, 0, 255);
+}
+
+.footer {
+    margin-top: 10000px;
+    background-color: red;
+}
