@@ -57,6 +57,8 @@ main {
 .navbar-logo {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-logo h1{
@@ -80,7 +82,7 @@ main {
     border-radius: 25px;
 }
 
-.navbar span {
+.navbar a, span {
     color: white;
     font-size: 18px;
     font-family: PlayFairRegular;

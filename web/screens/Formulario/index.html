@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>Trabalhe Conosco</title>
+</head>
+
+<body>
+
+    <div class="cad-inv">
+        <div class="">
+            <h1 id="titulo">Cadastro Currículo</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+        <div class="container">
+            <form class="container-form">
+                <!--<fieldset class="grupo">-->
+                <div class="container-form-section-1">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div class="campo">
+
+                    <!--</fieldset>-->
+
+                    <div class="date-nasci">
+                        <label for="data de nascimento"><strong> Informe a Data De Nascimento</strong></label><br>
+                        <input type="date" id="diaa" name="diaa" max="2006-01-01" required class="nasci">
+                    </div>
+                    <br>
+
+                    <div class="campo">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" name="email" id="email" required autocomplete="email">
+                    </div>
+
+                    <div>
+                        <label for="tel"><strong>Informe um número para contato</strong></label><br>
+                        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx"
+                            autocomplete="tel">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="sexo"><strong>Sexo</strong></label> <br>
+                        <input type="radio" value="Masculino" name="sexo" required> Masculino <br>
+                        <input type="radio" value="Feminino" name="sexo" required> Feminino <br>
+                        <input type="radio" value="Outros" name="sexo" required> Outros <br>
+                    </div>
+                    <br>
+
+                    <div class="campo">
+                        <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+                        <label>
+                            <input type="radio" name="devweb" value="frontend" checked>Front-end
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="backend">Back-end
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="fullstack">Fullstack
+                        </label>
+                    </div>
+                </div>
+                <div class="container-form-section-2">
+
+                    <div class="campo">
+                        <label for="senioridade"><strong>Senioridade</strong></label>
+                        <select id="senioridade">
+                            <option selected disable value="">Selecione</option>
+                            <option>Junior</option>
+                            <option>Pleno</option>
+                            <option>Senior</option>
+                        </select>
+                    </div>
+
+                    <!--<fieldset class="grupo">-->
+                    <label><strong>Selecione as tecnologias que utiliza:</strong></label><br>
+                    <div id="check">
+                        <div class="check-group">
+                            <label for="tecnologia1"><input type="checkbox" id="tecnologia1" name="tecnologia1"
+                                    value="HTML">HTML</label>
+
+                            <label for="tecnologia2"><input type="checkbox" id="tecnologia2" name="tecnologia2"
+                                    value="CSS">CSS</label>
+
+                            <label for="tecnologia3"><input type="checkbox" id="tecnologia3" name="tecnologia3"
+                                    value="Javascript">JavaScript</label>
+
+                            <label for="tecnologia4"><input type="checkbox" id="tecnologia4" name="tecnologia4"
+                                    value="PHP">PHP</label>
+                        </div>
+                        <div class="check-group">
+                            <label for="tecnologia1"><input type="checkbox" id="tecnologia1" name="tecnologia1"
+                                value="C#">C#</label>
+
+                        <label for="tecnologia6"><input type="checkbox" id="tecnologia6" name="tecnologia6"
+                                value="Python">Python</label>
+
+                        <label for="tecnologia7"><input type="checkbox" id="tecnologia7" name="tecnologia7"
+                                value="Java">Java</label>
+                        </div>
+                        
+                    </div>
+                    <!---- </fieldset>-->
+
+                    <div class="campo">
+                        <br>
+                        <label><strong>Conte um pouco da sua última experiência:</strong></label>
+                        <textarea cols="70" rows="10" class="input-default" required></textarea>
+                    </div>
+
+
+                    <div>
+                        <label><strong>Anexe seu Currículo</strong></label><br>
+                        <input type="file" name="arquivo " accept=".pdf">
+                    </div>
+                    <br>
+                </div>
+                <div class="container-form-section-3">
+                    <label><strong>Suas redes sociais:</strong></label><br>
+                    <div class="social">
+                        <div class="col">
+                            <label for="redes1" class="media">LinkedIn</label>
+                            <label for="redes2" class="media">GitHub</label>
+                            <label for="redes3" class="media">Instagram</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" name="LinkedIn" id="LinkedIn" class="redes">
+                            <input type="text" name="GitHub" id="GitHub" class="redes">
+                            <input type="text" name="Instagram" id="Instagram" class="redes">
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+
+            <div class="botao">
+                <button class="bot" type="submit">Concluído</buton>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
